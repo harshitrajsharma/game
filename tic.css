@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik Burned', system-ui;
+}
+
+.head{
+    border-bottom: 2px solid black;
+}
+
+body{
+    background-color: #eedbdb;
+}
+
+.heading{
+    color: #E3170A;
+    margin: 10px 20px;
+    font-size: 6vmin;
+    margin-left: 10%;
+}
+
+#wrapper{
+    display: flex;
+}
+
+.left-side{
+    width: 70%;
+}
+
+#container{
+    background-color: #D6A99A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+    justify-content: center;
+    padding: 20px;
+}
+
+#game{
+    display: grid;
+    grid-template-columns: repeat(3, 20vmin);
+    grid-gap: 10px;
+}
+
+.box{
+            width: 20vmin;
+            height: 20vmin;
+            font-size: 5vmin;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #333;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #E16036;
+            color: #ffffff;
+            border: none;
+}
+
+.count{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+
+.playerX, .playerY{
+    height: 50%;
+    font-size: 5vmin;
+    background-color: aqua;
+    padding: 40px;
+}
+
+.pX, .pY{
+    color:#E3170A;
+    font-size: 20vmin;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.winningMessage{
+    margin-top: 20px;
+    font-size: 5vmin;
+}
+
+
+.rst-btn, .nxt-game{
+    width: 20vmin;
+    font-size: 3vmin;
+    margin: 30px;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    
+    .heading{
+        text-align: center;
+    }
+
+    #wrapper{
+        flex-direction: column;
+    }
+
+    .left-side{
+        width: 100%;
+
+    }
+    .count{
+        width: 100%;
+        flex-direction: row;
+        background-color: aqua;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #container{
+        height: 65vh;
+    }
+
+    .playerX, .playerY{
+        padding: 10px;
+    }
+
+    
+
+  }
